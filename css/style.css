@@ -1,0 +1,39 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #4C495D;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultado {
+    margin: 20px 0px;
+}
+#numberWord {
+    margin: 20px 0px;
+}
+#btnTeste {
+    margin: 20px 0px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(221, 253, 255);
+}
+
+#btnTeste:hover {
+    background-color: red;
+}
