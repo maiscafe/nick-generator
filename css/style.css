@@ -2,10 +2,11 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
-    color: white;
-    background-color: #4C495D;
+    color: #000000;
+    background-color: #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -13,27 +14,82 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 60%;
-    height: 60%;
     border-radius: 12px;
     align-items: center;
     justify-content: center;
 }
 
-#resultado {
-    margin: 20px 0px;
-}
-#numberWord {
-    margin: 20px 0px;
-}
-#btnTeste {
-    margin: 20px 0px;
-    height: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(221, 253, 255);
+header {
+    position: fixed;
+    margin: 30px 0px;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    color: #ff912a;
 }
 
-#btnTeste:hover {
-    background-color: red;
+#resultado {
+    margin: 5px 0px;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    align-items: center;
+    color: white;
+    background-color: #ff912a;
+}
+#numberWord {
+    margin: 10px 0px 9px 0px;
+    height: 30px;
+    width: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#labelCaracter{
+    font-size: 1.2em;
+    padding-bottom: 3px;
+    border-bottom: #ff912a 1px solid;
+}
+#btnDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btnCopy {
+    margin: 20px 0px 2px 0px;
+    height: 30px;
+    width: 130px;
+    border: none;
+    border-radius: 12px;
+
+    color: white;
+    background-color: #ff912a
+}
+#btnTeste {
+    margin: 20px 0px 2px 0px;
+    height: 30px;
+    width: 140px;
+    border: none;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #ff912a;
+    box-shadow: inset 0px 0px 2px #f5b376;
+}
+
+#btnTeste:active, #btnCopy:active {
+    box-shadow: inset 0 0 2px #585858;
+}
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: #ffffff;
+    background-color: #ff912a;
+    box-shadow: 0px 0px 10px -2px #000000,  inset 0px 0px 2px #f5b376;
 }
