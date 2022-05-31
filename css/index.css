@@ -27,13 +27,14 @@ body {
     align-items: center;
     background-image: linear-gradient(to right top, #010101, #010101, #010100, #000000, #000000);
 }
-
+main {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
 main h1 {
     text-align: center;
     color: var(--white);
 }
 #menuUl {
-    animation: 1s ease-out 0s 1 slideInFromLeft;
     width: 200px;
     height: 300px;
     text-align: center;
