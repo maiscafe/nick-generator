@@ -1,6 +1,7 @@
 :root {
     --orange: #FF5E38;
     --orangeLight: #fd7253;
+    --white: #FDFDFD;
 }
 @keyframes slideInFromLeft {
     0% {
@@ -24,9 +25,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #010101;
+    background-image: linear-gradient(to right top, #010101, #010101, #010100, #000000, #000000);
 }
 
+main h1 {
+    text-align: center;
+    color: var(--white);
+}
 #menuUl {
     animation: 1s ease-out 0s 1 slideInFromLeft;
     width: 200px;
@@ -47,12 +52,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: inset 0px 0px 2px var(--orangeLight), 1px 2px 8px -2px var(--orangeLight);
+    box-shadow: inset 0px 0px 2px var(--orangeLight), 1px 2px 4px -2px var(--orangeLight);
+    
     
 }
 
 .menuLi:hover {
     cursor: pointer;
+    transform: perspective(247px) rotateY(3deg);
 }
 .menuLi:active {
     box-shadow: inset 0px 0px 2px #000000, 1px 2px 0px #000000;
@@ -64,5 +71,5 @@ footer {
     bottom: 0px;
     position: absolute;
     background-color: var(--orange);
-    box-shadow: -1px -2px 8px -2px var(--orangeLight);;
+    box-shadow: -1px -2px 4px -2px var(--orangeLight);;
 }
