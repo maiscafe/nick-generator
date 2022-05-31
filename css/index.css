@@ -1,0 +1,41 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menuUl{
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menuLi {
+    user-select: none;
+    background-color: #ff912a ;
+    height: 30px;
+    border-radius: 12px;
+    color: white;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 0px 2px #f5b376, 1px 3px 0px #000000;
+}
+.menuLi:hover{
+    cursor: pointer;
+}
+.menuLi:active {
+    box-shadow: inset 0px 0px 2px #000000, 1px 2px 0px #000000;
+}
+footer {
+    width: 100vw;
+    height: 30px;
+    bottom: 0px;
+    position: absolute;
+    background-color: #ff912a;
+}

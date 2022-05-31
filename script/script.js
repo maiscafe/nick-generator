@@ -2,6 +2,7 @@ const result = document.getElementById('resultado')
 const btnTeste = document.getElementById('btnTeste')
 const numberWord = document.getElementById('numberWord')
 const btnCopy = document.getElementById('btnCopy')
+const tagsDiv = document.getElementsByName('tagsRadio')
 const consoante = "b c d f g h j k l m n p r s t v w x y z".split(' ')
 const vogal = "a e i o u y".split(' ')
 const blacklist =[]
@@ -17,7 +18,13 @@ btnTeste.addEventListener("click", showNick)
 btnCopy.addEventListener("click", copy)
 
 function showNick() {
-    
+   
+    console.log(tagsDiv)
+    for (let i = 0; i < tagsDiv.length; i++) {
+        if (tagsDiv[i].checked) {
+            console.log(tagsDiv[i].value);
+        }
+    }
     let nickname =  createNick()
     while (hasOnBlackList(nickname)) {
         nickname = createNick()
