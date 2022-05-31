@@ -1,3 +1,8 @@
+:root {
+    --orange: #FF5E38;
+    --orangeLight: #fd7253;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -5,8 +10,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #010101;
 }
-#menuUl{
+
+#menuUl {
     width: 200px;
     height: 300px;
     text-align: center;
@@ -14,9 +21,10 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+
 .menuLi {
     user-select: none;
-    background-color: #ff912a ;
+    background-color: var(--orange);
     height: 30px;
     border-radius: 12px;
     color: white;
@@ -24,14 +32,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: inset 0px 0px 2px #f5b376, 1px 3px 0px #000000;
+    box-shadow: inset 0px 0px 2px var(--orangeLight), 1px 2px 8px -2px var(--orangeLight);
 }
-.menuLi:hover{
+
+.menuLi:hover {
     cursor: pointer;
 }
+
 .menuLi:active {
     box-shadow: inset 0px 0px 2px #000000, 1px 2px 0px #000000;
 }
+
 footer {
     width: 100vw;
     height: 30px;
