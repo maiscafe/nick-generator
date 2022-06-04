@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gerador de Nick</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <h1>Gerador de Nicks</h1>
-        <section>
-            <ul id="menuUl">
-                <li class="menuLi">FREE FIRE</li> 
-                <li class="menuLi">MMORPG</li>
-                <li class="menuLi">FPS</li>
-                <li class="menuLi">ROBLOX</li>
-                <li class="menuLi">APELIDO</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
+    <header>GERADOR DE NICKNAMES</header>
+    <main id="flex-container">
+        <label id="labelCaracter" for="numberWord">Número de caracteres</label>
+        <select name="letras" id="numberWord">
+            <option value="2">4</option>
+            <option selected value="4">6</option>
+            <option value="5">7</option>
+            <option value="6">8</option>
 
-    </footer>
+        </select>
+        <div id="btnDiv">
+        <span id="resultado"> </span>
+        <button id="btnGerar">Gerar nickname</button>
+        <button id="btnCopy">Copiar nickname 🗎</button> 
+        </div>
+        <div id="tagsDiv" >
+            
+        </div>
+        <footer></footer>
+    </main>
+    <script src="./script/script.js"></script>
 </body>
-<script src="./script/clickmenu.js"></script>
 </html>
